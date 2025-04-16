@@ -1,5 +1,4 @@
-# SNSM
-Source Code for Self-Neighbourhood Support Maps Project
+# SNSM: Self-Neighbourhood Support Maps
 This repository provides the implementation of the [SNSM](https://ieeexplore.ieee.org/abstract/document/10889993) approach. Some of the code snippets are stolen from [AnyLoc](https://github.com/AnyLoc/AnyLoc.git) and [Patch-NetVLAD](https://github.com/QVPR/Patch-NetVLAD.git) works.  
 
 ## Summary
