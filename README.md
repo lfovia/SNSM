@@ -11,7 +11,7 @@ The SNSM directory contains the All-Backbones-VLAD_bl.py file, which can produce
 Inference datasets: [RGB-T Datasets Drive link](https://drive.google.com/file/d/11qBQw9DadQ5MemUTouK6HolPEPCo-BXT/view?usp=sharing) 
 
 ## Command to run
-This is to train the model. 
+Use the below command for inference. 
 ```python
 sh All-Backbones-VLAD_bl.sh 
 ```
