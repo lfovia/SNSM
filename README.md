@@ -10,28 +10,23 @@ The SNSM directory contains the All-Backbones-VLAD_bl.py file, which can produce
 ## Data
 Inference datasets: [RGB-T Datasets Drive link](https://drive.google.com/file/d/11qBQw9DadQ5MemUTouK6HolPEPCo-BXT/view?usp=sharing) 
 
-## Cluster
-Make appropriate changes to the directory paths in the code snippets. 
-The below command generates clusters to initialize the model. 
-```python
-python main.py --mode=cluster
-```
-## Train
+## Command to run
 This is to train the model. 
 ```python
-python main.py --mode=train 
+sh All-Backbones-VLAD_bl.sh 
 ```
+snsm aggregator is activated by default. Please provide appropriate arguments in the bash file regarding the choice of aggregator. The available aggregators include VLAD, VLAD-API, GeM, GAP, GMP, and SNSM. More information about these is available in the main function in All-Backbones-VLAD_bl.py.  
 ## Bibtex
 Please use the below BibTeX to cite if you use the code.
 ```
-@ARTICLE{10605600,
-  author={Uggi, Anuradha and Channappayya, Sumohana S.},
-  journal={IEEE Signal Processing Letters}, 
-  title={MS-NetVLAD: Multi-Scale NetVLAD for Visual Place Recognition}, 
-  year={2024},
-  volume={31},
+@INPROCEEDINGS{10889993,
+  author={Uggi, Anuradha and Channappayya, Sumohana},
+  booktitle={ICASSP 2025 - 2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
+  title={Training-free Adapter for Multi-Modal Image Matching for All-Day Visual Place Recognition}, 
+  year={2025},
+  volume={},
   number={},
-  pages={1855-1859},
-  keywords={Visualization;Image recognition;Transforms;Contrastive learning;Benchmark testing;Feature extraction;Vectors;Image matching;visual place recognition;scale invariance;NetVLAD},
-  doi={10.1109/LSP.2024.3425279}}
+  pages={1-5},
+  keywords={Computer vision;Adaptation models;Image recognition;Correlation;Source coding;Speech recognition;Signal processing;Acoustics;Speech processing;Visual place recognition;Multi-modal image retrieval;RGB;thermal;and visual place recognition},
+  doi={10.1109/ICASSP49660.2025.10889993}}
 ```
