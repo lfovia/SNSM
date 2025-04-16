@@ -1,16 +1,14 @@
 # SNSM
 Source Code for Self-Neighbourhood Support Maps Project
-This repository provides the implementation of the [SNSM](https://ieeexplore.ieee.org/abstract/document/10889993) approach. 
+This repository provides the implementation of the [SNSM](https://ieeexplore.ieee.org/abstract/document/10889993) approach. Some of the code snippets are stolen from [AnyLoc](https://github.com/AnyLoc/AnyLoc.git) and [Patch-NetVLAD](https://github.com/QVPR/Patch-NetVLAD.git) works.  
 
 ## Summary
-This work proposes a new training-free technique for the all-day Visual Place Recognition (VPR) problem. It especially addresses the illumination challenge in the VPR. The SNSM function accepts a feature block from the backbone model and aggregates it into a modality-invariant (RGB and thermal) feature map called an SNSM map. Essentially, this attempts to capture the support value of each selected patch from its neighbourhood, which retains the homogeneous structural details and suppresses the heterogeneous modality-specific features. For further details, we refer you to the full-paper. The simple and training-free SNSM improve upon popular VPR models and various unsupervised methods by a considerable margin.       
+This work proposes a new training-free technique for the all-day Visual Place Recognition (VPR) problem. It especially addresses the illumination challenge in the VPR. The SNSM function accepts a feature block from the backbone model and aggregates it into a modality-invariant (RGB and thermal) feature map called an SNSM map. Essentially, this attempts to capture the support value of each selected patch from its neighbourhood, which retains the homogeneous structural details and suppresses the heterogeneous modality-specific features. For further details, please refer to the full paper. The simple and training-free SNSM improve upon popular VPR models and various unsupervised methods by a considerable margin.       
 
 ## Repo. details
-The current code is for training the model on the GSV-Cities dataset. Details for training on other datasets, including Pittsburgh 30k and MSLS, will be uploaded soon.
-
+The SNSM directory contains the All-Backbones-VLAD_bl.py file, which can produce recall rates for the choice of dataset and aggregator. Currently, only unsupervised feature extraction techniques are included. However, VPR models reported in the paper are off-the-shelf, and models are open-source. 
 ## Data
-Training data: [GSV-Cities](https://github.com/amaralibey/gsv-cities?tab=readme-ov-file), 
-Test data: [Pittsburgh 250k](https://github.com/Relja/netvlad/issues/42)
+Inference datasets: [RGB-T Datasets Drive link](https://drive.google.com/file/d/11qBQw9DadQ5MemUTouK6HolPEPCo-BXT/view?usp=sharing) 
 
 ## Cluster
 Make appropriate changes to the directory paths in the code snippets. 
