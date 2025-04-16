@@ -1,7 +1,7 @@
 
 for dataS in 'M3FD' 'Boson' 'FLIR' 'INO' 'LLVIP' 'VOT' 'VTUAV' #
 do     
-   python All-Backbones-VLAD_bl.py  --upscale_factor=4 --window_size=2 --emb_dim=602112 --backbone=DINOv1 --baseline --encoder=1 --data=$dataS 
+   python All-Backbones-VLAD_bl.py  --upscale_factor=4 --window_size=2 --emb_dim=3136 --backbone=DINOv1 --snsm --encoder=1 --data=$dataS
  
 done
 
